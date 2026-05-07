@@ -14,7 +14,7 @@ preços.remove(preços[-1])
 print("")
 # Para somar o preço de todos os produtos:
 total = sum(preços)
-print(f"O Total Deu R${total}")
+print(f"O Total Deu R${total:.2f}")
 
 # Lógica Condicional if/else para desconto:
 if total < 500:
@@ -24,5 +24,6 @@ if total < 500:
 else:
     desconto = 0.95
     total = total * desconto
-    print(f"O Total Agora Com Desconto é de R%{total}")
+    print(f"O Total Agora Com Desconto é de R%{total:.2f}")
 print("")
+
