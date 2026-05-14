@@ -2,8 +2,8 @@ produtos = ["Camisa","Casaco","Tênis","Calça", "Cueca"]
 preços = [50.00, 80.00, 60.00, 70.00, 20.00]
 quantidades = [2, 3, 4, 1, 6]
 subtotais = []
-#ANTES, FAÇA ASSIM PARA PEAR O PRODUTO E PREÇO DO PRODUTO:
 
+#ANTES, FAÇA ASSIM PARA  O VER PRODUTO E PREÇO DO PRODUTO:
 print(f"O produto {produtos[0]} custa R$: {preços[0]}.")
 
 for indice, produtos in enumerate(produtos):
