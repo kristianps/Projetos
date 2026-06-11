@@ -7,9 +7,39 @@ class Produto:
     def exibir(self):
         print(f"Produto: {self.nome}, Preço: {self.preco}, Quantidade: {self.qtd}")
 
-produto_1 = Produto(nome="Arroz",
-                  preco=7.0,
-                  qtd=10)
+def exibir_menu():
+    print("======================")
+    print("1 - Cadastro de Produtos")
+    print("2 - Exibir Produtos")
+    print("0 - Sair")
+    print("======================")
 
-produto_2 = Produto("Feijão", 10.0, 15)
-produto_1.exibir()
+def cadastrar_produto():
+    print("\nCADASTRANDO PRODUTO....")
+    nome = input("Digite o nome: ")
+    preco = float(input("Digite o preço do produto: "))
+    qtd = int(input("Digite a quantidade do produto: "))
+    produto = Produto(nome, preco, qtd)
+    produtos.append(produto)
+    
+def exibir_produtos():
+    for produto in produtos:
+        print("================")
+        produto.exibir()
+        print("================")
+
+
+produtos = []
+
+while True:
+    exibir_menu()
+    opcao = input("Escolha uma opção: ")
+    
+    if opcao == "0":
+        break
+    elif opcao == "1":
+        cadastrar_produto()
+    elif opcao == "2":
+        exibir_produtos()
+    else:
+        print("Opção Inválida!")

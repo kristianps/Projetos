@@ -14,7 +14,7 @@ def saudacao():
 
 # Opção 2 (ELIF)
 def sobre():
-    print("O curso Jovem Programador, nesse primeiro semestre, tem o intuito de aprender conceitos básicos de algoritmos com Python e banco de dados Mysql.")
+    print("\nO curso Jovem Programador, nesse primeiro semestre, tem o intuito de aprender conceitos básicos de algoritmos com Python e banco de dados Mysql.")
 
 # Opção 3 (ELIF)
 def ajuda():
